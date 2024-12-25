@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="/styles/registration.css">
+    <link rel="icon" href="../favicon.png" type="image/png">
+</head>
+<body>
+<div class="header">
+    <h1>Регистрация</h1>
+    <div class="auth-buttons">
+        <button onclick="window.location.href='registration.html'">Регистрация</button>
+        <button onclick="window.location.href='../index.php'">Вернуться в чат</button>
+    </div>
+</div>
+
+<div class="registration-container">
+    <h2>Войдите в аккаунт</h2>
+    <form action="../user/authorization.php" method="post" class="registration-form">
+        <input class="form-input" type="email" name="email" placeholder="Email" id="email" required >
+        <input class="form-input" type="password" name="password" placeholder="Пароль" id="password" required >
+        <button type="submit" class="submit-button">Войти</button>
+    </form>
+</div>
+</body>
+</html>
